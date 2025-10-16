@@ -1,0 +1,45 @@
+# Name: Sales Data
+kind: AdaptiveDialog
+modelDescription: you will choose this topic when the user wants sales data (units sold / number of products etc.)
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: Question
+      id: question_9jFlU4
+      interruptionPolicy:
+        allowInterruption: true
+
+      variable: init:Topic.Var1
+      prompt: Which coutnry are you talking about?
+      entity:
+        kind: EmbeddedEntity
+        definition:
+          kind: ClosedListEntity
+          items:
+            - id: Canada
+              displayName: Canada
+
+            - id: Not Canada
+              displayName: Not Canada
+
+    - kind: ConditionGroup
+      id: conditionGroup_cNOUjw
+      conditions:
+        - id: conditionItem_F2WzVn
+          condition: =Topic.Var1 = 'cr0e2_financialDataAssistant.topic.SalesData.main.question_9jFlU4'.Canada
+          actions:
+            - kind: SendActivity
+              id: sendActivity_lrMJxa
+              activity: OK Canada
+
+        - id: conditionItem_aV6waI
+          condition: =Topic.Var1 = 'cr0e2_financialDataAssistant.topic.SalesData.main.question_9jFlU4'.'Not Canada'
+          actions:
+            - kind: SendActivity
+              id: sendActivity_IOiIqA
+              activity: OK Not Canada
+
+inputType: {}
+outputType: {}

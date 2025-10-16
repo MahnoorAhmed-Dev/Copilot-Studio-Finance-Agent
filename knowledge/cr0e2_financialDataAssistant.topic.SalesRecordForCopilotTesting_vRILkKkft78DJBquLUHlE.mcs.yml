@@ -1,0 +1,6 @@
+# Name: Sales Record For Copilot Testing
+# This knowledge source answers questions found in the following Dataverse items: Sales Record For Copilot Testing
+kind: KnowledgeSourceConfiguration
+source:
+  kind: DataverseStructuredSearchSource
+  skillConfiguration: SalesRecordForCopilotTesting_0AaJD4BeEC4QW8oDiGB6c
