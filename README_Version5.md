@@ -1,43 +1,43 @@
-# Copilot Studio Policy Agent
+# Copilot Studio Finance Agent
 
-A Microsoft Copilot Studio agent that connects to a SharePoint site containing JBS policy documents, enabling users to query policies directly from their Teams channel. The agent leverages integrated SharePoint and Excel actions to retrieve, check in, and provide details about policy files.
+A Copilot Studio agent for Microsoft Teams, connected to finance-related knowledge sources such as SharePoint and Excel. The agent answers user queries regarding finance policies, documents, and analytics, and enables document actions and data retrieval for finance teams.
 
 ---
 
 ## Overview
 
-Copilot Studio Policy Agent allows users to:
+Copilot Studio Finance Agent enables organizations to:
 
-- Ask questions about JBS policy documents directly in Teams
-- Retrieve document details and properties from SharePoint
-- Check in files using SharePoint actions
-- Query Excel data associated with policy documentation
+- Query finance policies and documents directly from Microsoft Teams
+- Retrieve finance document details and properties from SharePoint
+- Access and query financial data from integrated Excel spreadsheets
+- Automate document actions, analytics, and reporting workflows
 
-The agent is deployed to a Teams channel and uses SharePoint and Excel as knowledge sources for fast, authoritative answers.
+The agent leverages Copilot Studio workflows, SharePoint libraries, and Excel integration to deliver fast, reliable financial information and document automation.
 
 ---
 
 ## Features
 
 **For Users**
-- Query any JBS policy document in natural language
-- Retrieve document properties from SharePoint
-- Get rows and data from associated Excel policy sheets
-- Check in files to SharePoint directly
+- Search and query any finance policy or document in plain language
+- Retrieve document properties, metadata, and latest updates from SharePoint
+- Access rows and details from Excel files containing financial data
+- Automate document actions, such as check-in, check-out, or report generation
 
 **For Admins**
-- Configure agent connection to SharePoint policy document library
-- Set up Excel data integrations
-- Deploy and manage the agent in Copilot Studio and Teams
+- Configure agent connection to finance-related SharePoint libraries
+- Set up Excel file data integrations for analytics and reporting
+- Deploy and manage the agent via Copilot Studio and Microsoft Teams
 
 ---
 
 ## Tech Stack
 
-- **Copilot Studio**: For agent provisioning and workflow orchestration
-- **SharePoint Online**: Stores all JBS policy documents
-- **Microsoft Excel (Online)**: Hosts policy-related datasets
-- **Microsoft Teams**: End-user deployment and interaction
+- **Copilot Studio**: Agent provisioning and workflow orchestration
+- **SharePoint Online**: Stores finance documents and policies
+- **Microsoft Excel (Online)**: Financial data storage and analytics
+- **Microsoft Teams**: End-user deployment and chat-based interaction
 
 ---
 
@@ -46,25 +46,25 @@ The agent is deployed to a Teams channel and uses SharePoint and Excel as knowle
 Clone the repository:
 
 ```
-git clone https://github.com/MahnoorAhmed-Dev/Copilot-Studio-Policy-Agent.git
-cd Copilot-Studio-Policy-Agent
+git clone https://github.com/MahnoorAhmed-Dev/Copilot-Studio-Finance-Agent.git
+cd Copilot-Studio-Finance-Agent
 ```
 
-Set up your Copilot Studio environment and provision a new agent using this repository’s code/configuration.
+Provision a new agent in Copilot Studio using the repository’s code and configuration, and connect it to your finance-related SharePoint and Excel sources.
 
 ---
 
 ## Configuration
 
 **SharePoint Setup**
-- Ensure your SharePoint site contains the necessary policy documents
-- Grant the agent access to the document library
-- Configure SharePoint actions: Check In File, Get Properties
+- Store finance documents and policies in your SharePoint site
+- Grant the agent required permissions to the document library
+- Configure SharePoint actions for document management
 
 **Excel Setup**
-- Store policy data in a dedicated Excel file on SharePoint
-- Grant agent access to this Excel file
-- Configure the Get Rows action for Excel integration
+- Store financial data in dedicated Excel files on SharePoint
+- Grant agent access to these Excel files
+- Configure analytics and reporting actions as needed
 
 **Licensing**
 - Copilot Studio License: Required for agent provisioning ([details](https://learn.microsoft.com/en-us/microsoft-copilot-studio/licensing))
@@ -76,11 +76,11 @@ Set up your Copilot Studio environment and provision a new agent using this repo
 
 **For Users**
 - Access the Teams channel where the agent is deployed
-- Ask policy-related questions or request document actions
+- Ask finance-related questions or request document/data actions
 
 **For Admins**
 - Monitor agent performance in Copilot Studio
-- Update SharePoint/Excel integrations as policies evolve
+- Update SharePoint/Excel integrations as finance policies and data evolve
 
 ---
 
@@ -108,9 +108,9 @@ For support, open an issue in this repository or contact [Mahnoor Ahmed-Dev](htt
 
 ## Roadmap
 
-- Enhanced natural language understanding for policy queries
-- Integration with additional knowledge sources
-- Advanced analytics and reporting for admins
+- Enhanced finance analytics and visualization
+- Integration with additional finance data sources
+- Advanced reporting and dashboard features
 - Multi-language support
 
 ---
